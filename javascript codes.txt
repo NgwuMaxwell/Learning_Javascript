@@ -1,0 +1,220 @@
+alert('Hello World!');
+2 + 2
+document.body.innerHTML = 'Hello';
+
+Timeline
+1. 1 - 14 mins = lesson 1
+2. 15 - 42 mins = lesson 2 (number and math) https://supersimple.dev/projects/amazon
+3. 43 - 1:07 mins = lesson 3 (stings)
+4. 1:07 - 1:50 mins = lesson 4 (HTML CSS review, console.log)
+5. 1:51 - 2:32 mins= lesson 5 (Variables)
+6. 2:33 - 3:33 mins = lesson 6 (Booleans and ifstatements) https://supersimple.dev/projects/booleans/
+7. 3:34 - 4:15 mins = Lesson 7 (Functions)
+8. 4:15 - 5:25 = Lesson 8 (Objects)
+9. 5:25 - 6:38 = Lesson 9 (DOM) - https://supersimple.dev/projects/dom/
+10. 6:38 - 7:42 = Lesson 10 (HTML, CSS and JavaScript Together) - https://supersimple.dev/projects/dom-with-css/
+11. 7:42 - = Lesson 11 (Arrays and Loops) - https://supersimple.dev/projects/arrays/
+12.
+13.
+14.
+15.
+16.
+
+
+
+
+
+
+
+>maths operators in js
++, -, *, /,
+
+10.90 *2 +20.95
+42.75
+
+10.90 *2 +20.95 + 4.99
+47.74
+
+>multiply and divide are done first(same priority: if both are in an equation, calculate from left to right), plus and minus are done after(same rule for appearance of both)
+>brackets have the highest priority
+
+20.95 + 7.99*2
+36.93
+
+>percentage calculation
+1% = 1/100
+36.93 * 0.1
+3.693
+
+20.95 + 7.99*2 * 0.1
+22.548
+
+(20.95 + 7.99*2) * 0.1
+3.693
+
+>wierd behavior of maths in javascript
+in programming:
+2,3,4 = intergers
+2.2,2.5 = floating point numbers(floats)
+>computers have a problem with (some)floats cuz:
+computers => 0 and 1
+humans = > 0123456789
+eg: 0.1 + 0.2
+0.30000000000000004
+
+solution
+20.95 + 7.99
+28.939999999999998
+>how to solve this problem when calculating number, calculate with cents then convert back to dollar in the end
+
+(2095 + 799) / 100
+28.94
+>how to round a number in js
+Math.round(2.2)
+2
+Math.round(2.8)
+3
+((2095 + 799) * 0.1) /100
+2.894
+
+Math.round(((2095 + 799) * 0.1)) /100
+2.89
+ or 
+'$' + 20.95 + 7.99((2095 + 799) * 0.1) /100
+2.89
+
+>how to use google to learn js on your own
+
+
+>STRINGS
+string = text
+concatenation
+'some' + 'more' + 'text'
+'somemoretext'
+
+
+>types of values
+1. number
+2. string
+3. BOOLEANS
+3. objects
+
+typeof 1
+'number'
+typeof 'hello'
+'string'
+
+type coercion/automatic type conversion
+'hello' + 3
+'hello3'
+
+'$' + 20.95 + 7.99
+'$20.957.99'
+
+'$' + (20.95 + 7.99)
+'$28.939999999999998'
+
+'$' + (2095 + 799) / 100
+'$28.94'
+
+'Items (' + (1+1) + '): $' + (2095 + 799) / 100
+'Items (2): $28.94'
+
+3 WAYS TO CREATE A STRING
+1. single quote '...'
+2. double quote "..."
+3. back tick `...` = template strings
+
+'I'm learning javascript'
+VM821:1 Uncaught SyntaxError: Unexpected identifier 'm'Understand this errorAI
+"I'm learning javascript"
+"I'm learning javascript"
+
+>escape characters
+\'
+\"
+\n new line
+
+'I\'m learning javascript'
+"I'm learning javascript"
+
+'he said \"i am rich\" and all present laughed at him'
+'he said "i am rich" and all present laughed at him'
+
+alert('some\ntext');
+
+>template strings special features;
+>interpolation =insert a value direectly into a string (cleaner than concatenation and recommended)
+`Items (${1+1}): $${(2095 + 799) / 100}`
+'Items (2): $28.94'
+
+>multi-line strings
+`some
+text`
+'some\ntext'
+
+>HTML,CSS AND JAVASCRIPT
+
+Naming conventions
+camelCase = cartQantity (primary to javascript)
+PaschalCase CartQuantity (used in javascript in rare instances)
+kebab-case = cart-quantity (not used in javascript but in html and css)
+snake_case = cart_quantity (used in other languages)
+
+3 ways to create a variable
+
+let (use as exception when you know the content of variable may chage later)
+const (use as default)
+var (was the original way of creating variables but had problems and is not used again in new javascript)
+
+console.log(typeof variable1);
+
+BOOLEANS
+Comparison Operators
+> greater than
+< less than
+>= greater than or equal to
+<= less than or equal to
+=== equal to (strict eqalizer)
+== equal to (convertion problem)
+!== not equal to (strict)
+!= not equal to (convertion problem)
+
+
+IF STATEMENTS
+
+>logical operators
+&& AND operator (checks if left and right is true; if both are true then = true)
+|| OR operator (checks if left or right is true; if one is true then = true)
+
+!true / !false NOT OPERATOR (flips the value to the opposite)
+
+if statements create scope and scope helps us avoid naming conflicts 
+var doesn't follow the rules of scope thats why we dont use it anymore
+
+FALSY VALUES
+false, 0, '', NaN, undefined and null
+
+TRUTHY VALUES
+all that are not in the above 
+
+sHORTCUTS FOR IF-STATEMENTS
+- Ternary Operator ?:
+- Guard Operator &&
+- Default Operator ||
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
